@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tick tac game</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="overlays.css" />
+	<link rel="stylesheet" href="config_overlay.css" />
+	<link rel="stylesheet" href="game.css" />
+
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@200;400&display=swap"
+		rel="stylesheet" />
+	<!-- script -->
+	<script src="config.js" defer></script>
+	<script src="game.js" defer></script>
+	<script src="app.js" defer></script>
+</head>
+
+<body>
+	<!-- backdrop -->
+	<div id="backdrop"></div>
+
+	<!-- header -->
+	<header>
+		<h1>Play Tic, Tac, Toe</h1>
+		<p>Built with HTML,CSS,Javascript and -of course -lots of love</p>
+	</header>
+
+	<!-- main -->
+	<main>
+		<aside class="moral" id="config_overlay">
+			<h2>Choose your name</h2>
+			<form>
+				<div class="form_control">
+					<label for="player_name">Player Name</label>
+					<input type="text" name="name" id="player_name" />
+				</div>
+				<div>
+					<button type="submit">Confirm</button>
+					&nbsp;
+					<button type="button" class="btn" id="cancel_btn">Cancel</button>
+				</div>
+			</form>
+		</aside>
+
+		<!-- players div -->
+		<div id="player_info_div">
+			<!-- player-1 -->
+			<div id="player_1" class="player_div">
+				<h2><strong>Player-1</strong></h2>
+				<h3 class="name_para" id="name_para_1">PLAYER NAME</h3>
+				<strong>X</strong>
+				<br />
+				<button type="submit" id="player_1_name_btn" data-playerid="1">
+					Edit
+				</button>
+			</div>
+
+			<!-- player-2 -->
+			<div id="player_2" class="player_div">
+				<h2><strong>Player-2</strong></h2>
+				<h3 class="name_para" id="name_para_2">PLAYER NAME</h3>
+				<strong>O</strong>
+				<br />
+				<button type="submit" id="player_2_name_btn" data-playerid="2">
+					Edit
+				</button>
+			</div>
+		</div>
+
+		<!-- start game btn -->
+		<div id="btn_game_start-section">
+			<button type="submit" id="btn_start_game">Start New Game</button>
+		</div>
+
+		<!-- game section -->
+		<div id="active_game">
+			<article id="game_over">
+				<h2>You won <span id="winner_name"></span></h2>
+				<p>Clich "Start new game" above, to start a new game!</p>
+			</article>
+
+			<p>It's your turn <span id="active_player_name">PLAYER NAME</span>!</p>
+			<ol>
+				<li></li>
+				<li></li>
+				<li></li>
+
+				<li></li>
+				<li></li>
+				<li></li>
+
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+
+	</main>
+</body>
+
+</html>

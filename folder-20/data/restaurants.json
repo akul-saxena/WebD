@@ -1,0 +1,16 @@
+[
+	{
+		"name": "test1",
+		"address": "B 142 Sethi colony jaipur Rajasthan ",
+		"cuisine": "indian",
+		"website_url": "https://www.w3schools.com/css/css3_variables.asp",
+		"message": "hello"
+	},
+	{
+		"name": "test2",
+		"address": "3 TA 6",
+		"cuisine": "italian",
+		"website_url": "https://www.w3schools.com/css/css3_variables.asp",
+		"message": "hi"
+	}
+]

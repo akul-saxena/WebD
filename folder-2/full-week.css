@@ -1,0 +1,40 @@
+body {
+	background: transparent;
+	color: cornflowerblue;
+}
+title {
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+}
+#goal-list {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 300;
+}
+
+#new-html-link {
+	color: brown;
+	text-decoration: none;
+	transition: all 1s;
+}
+#new-html-link:hover {
+	color: rgb(252, 96, 40);
+	text-decoration: underline;
+}
+
+#goals-list > li {
+	margin: 10px;
+	background: rgb(216, 215, 215);
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px 0;
+	width: 400px;
+	border: goldenrod 2px solid;
+	box-shadow: 2px 2px 10px rgb(141, 141, 141);
+}
+ul > li {
+	color: red;
+}
+dl > dt {
+	color: black;
+	text-transform: capitalize;
+}

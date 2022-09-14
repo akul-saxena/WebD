@@ -1,0 +1,33 @@
+.row {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: flex-start;
+	margin: 15px 0;
+}
+
+input,
+textarea {
+	border-radius: 5px;
+	padding: 5px;
+	width: 100%;
+	border: none;
+	width: 300px;
+}
+
+form {
+	width: fit-content;
+	margin: 0 auto;
+	background-color: #d1b67d;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+button {
+	background-color: rgb(201, 126, 59);
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.25rem;
+}

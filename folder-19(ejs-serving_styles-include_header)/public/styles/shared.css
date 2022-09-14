@@ -1,0 +1,49 @@
+:root {
+	--bg_body: #faeacb;
+	--nav_item_text: #715725;
+	--logo_bg: #ffb339;
+	--card_bg: #2a2717;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background-color: var(--bg_body);
+    text-align: center;
+}
+header {
+	padding: 0px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	padding: 15px 30px;
+	background-color: var(--logo_bg);
+    font-size: 1.5rem;
+    font-weight:900;
+    border-radius: 50%;
+}
+
+.logo a{
+    color: white;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav_item {
+	margin: 20px;
+}
+
+.nav_item a {
+	color: var(--nav_item_text);
+}
+
+.heading_text{
+	color: var(--logo_bg);
+}

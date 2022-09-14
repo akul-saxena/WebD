@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Conditional statements</title>
+</head>
+
+<body>
+	<!-- sum till a number -->
+	<section>
+		<form action="#">
+			<label for="input_num"><strong>Enter a number</strong></label>
+			<input type="number" id="input_num" />
+			<button type="submit" id="btn_s" onclick="sum_num()">Add</button>
+		</form>
+		Sum: <span id="output_sum"></span>
+	</section>
+
+	<!-- higlighting links -->
+	<section>
+		<!-- heading -->
+		<h1>Highlights Links</h1>
+		<button type="submit" id="btn_highlights">
+			Highlights all links in the text
+		</button>
+		<!-- paragraph -->
+		<p id="para_1">
+			This is some text that also contains useful links (like
+			<a href="#" target="_blank" rel="noopener noreferrer">this one</a>) that
+			actually lead nowhere. They lead nowhere because the text and example is
+			<strong>not</strong> about anchor elements or links destinations but
+			instead about Javascript.
+		</p>
+		<p id="para_2">
+			Because you can use
+			<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+				rel="noopener noreferrer">Javascript</a>
+			(okay , this one actually <strong>does</strong> lead somewhere) not just
+			for funny demos or useless examples but for real usefrul things - like
+			highlighting all links in a text.
+		</p>
+		<p id="para_3">
+			You can dive even deeper into JavaScript with one of our bestselling ,
+			deep-dive , Javascript-focused
+			<a href="#" target="_blank" rel="noopener noreferrer">courses</a>
+		</p>
+	</section>
+
+	<!-- showing ionformation -->
+	<section>
+		<ul id="info" list-style-type="none"></ul>
+	</section>
+
+	<!-- random dice -->
+	<section>
+		<h1>Statistics</h1>
+		<p>
+			Test your luck and find out how many dice rolls (1-6 dice) it takes for
+			you to roll a certain number (between 1 and 6).
+		</p>
+		<form action="#">
+			<label for="input_ran_num"><strong>Your target number:</strong></label>
+			<br />
+			<input type="number" id="input_ran_num" min="1" max="6" />
+			<br />
+			<br />
+			<button type="submit" id="btn_roll_dice">Roll the Dice</button>
+		</form>
+		<p id="output_para"></p>
+		<p>
+			It took you <span id="num_rolls"><strong>X</strong></span> rolls to roll
+			a <span id="num"><strong>Y</strong></span>
+		</p>
+	</section>
+
+	<script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+:root {
+	--purple: #710df0;
+	--blue: #3b087c;
+	--dark-blue: #200d3e;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+header {
+	background-color: rgb(144, 0, 254);
+	color: azure;
+	text-align: center;
+	padding: 20px 0px 15px;
+}
+
+/* player infomation section */
+#player_info_div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+	margin: 50px;
+	margin-bottom: 0;
+}
+
+.player_div {
+	text-align: center;
+	height: 200px;
+	width: 225px;
+	background-color: #edddfc;
+	color: var(--dark-blue);
+	/* font-size: 1.5rem; */
+	border-radius: 5px;
+}
+
+.name_para {
+	color: var(--blue);
+}
+#player_2_name_btn,
+#player_1_name_btn {
+	color: #4f1598;
+	/* border: 0.5px solid var(--blue); */
+	border: none;
+	border-radius: 5px;
+	background: transparent;
+	font-size: 1.25rem;
+	cursor: pointer;
+}
+
+#btn_start_game {
+	background-color: var(--purple);
+	color: #fff;
+	margin: 0 auto;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 20px;
+	word-spacing: 2px;
+	box-shadow: var(--dark-blue) 2px 2px;
+}
+
+#btn_game_start-section {
+	text-align: center;
+	margin-top: 20px;
+}
+#btn_start_game:active {
+	transform: translate(1px, 1px);
+}
+
+/* form css */
+aside button[type="submit"] {
+	color: #fff;
+	background-color: var(--purple);
+	border: none;
+	border-radius: 3px;
+	padding: 0.25rem 1rem;
+	font: inherit;
+}
+aside button[type="button"] {
+	color: var(--purple);
+	background: transparent;
+	border: none;
+	font: inherit;
+}
+aside button:hover[type="button"] {
+	background: #e9d8ff;
+	border: 1px solid var(--purple);
+	border-radius: 3px;
+}
